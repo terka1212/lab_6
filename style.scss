@@ -615,29 +615,29 @@ footer{
     display: flex;
     flex-direction: row;
     justify-content: center;
-    border-bottom: 1px solid;
-    border-color: rgba($color: #333, $alpha: 0.3);
+    
     width: 100%;
-
-
-    background-color: rgba($color: #333, $alpha: 0.05);
-    height: 588px;
-    margin-top: 112px;
+    background-color: rgba(51, 51, 51, 0.05);
+    
+    margin-top: 120px;
+    align-items: flex-start;
 }
 .footcontent{
 
    
-    width: 1296px;
-    align-items: center;
+    width: 1350px;
     margin-top: 60px;
-    margin-bottom: 130px;
+    box-sizing: border-box;
+
+    
+    
 }
 .bloks{
     
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    font-family: 'Circe';
+    justify-content: space-between;
+    font-family: "Circe";
     color: #333;
    
 
@@ -653,6 +653,7 @@ footer{
         font-weight: 400;
         font-size: 14px;
         width: 221px;
+        
         ul{
             
             display: flex;
@@ -661,13 +662,14 @@ footer{
             margin-top: 0px;
             margin-bottom: 0px;
             list-style: none;
+            margin-block-start: 0;
+            padding-inline-start: 0;
         } 
         li{
             font-size: 14px;
             text-decoration: none;
             list-style: none;
             margin-bottom: 20px;
-            margin-left: -35px;
         }
         
         a, span {
@@ -676,6 +678,7 @@ footer{
                 font-size: 14px;
                 text-decoration: none;
             }
+
         
     }
     &__iconbar{
@@ -712,12 +715,26 @@ footer{
     flex-direction: column;
 }
     &__column{
-        margin-top: -25px;
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
-        width: 200px;
-        margin-left: 69px;
+        width: 230px;
+        .wrap{
+            margin-top: 25px;
+            div{
+                margin-bottom: 15px;
+                &:nth-last-child(1){
+                    margin-bottom: 0;
+                }
+            }
+            
+        }
+        h3{
+            margin-top: 40px;
+            &:nth-child(1){
+                margin-top: 0px;
+            }
+        }
         h4{
         font-size: 20px;
         font-weight: 700;
@@ -772,3 +789,33 @@ footer{
     
 }
 
+
+h3{
+    margin: 0;
+}
+
+.border{
+    width: 100%;
+    height: 1px;
+    background-color: #333333;
+    opacity: 0.5;
+    margin-top: 60px;
+}
+
+.cop{
+    font-family: 'Circe';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 140%;
+    /* identical to box height, or 20px */
+
+
+    /* black */
+
+    color: #333333;
+
+    opacity: 0.5;
+margin-bottom: 25px;
+    margin-top: 25px;
+}
